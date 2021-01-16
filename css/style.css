@@ -2,22 +2,32 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    background-color: gainsboro;
+}
 main {
-    width: 1200px;
+    width: 900px;
     max-width: 90%;
     margin: 0 auto;
     place-items: center;
 }
-
+section{
+    background-color: ghostwhite;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+}
+.section-title{
+    color: indianred;
+}
 .top-players,
-.blogs {
+.blogs, .courses {
     display: grid;
     grid-gap: 30px;
     margin-top: 20px;
 }
 
-.top-players {
+.top-players,.courses {
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -44,13 +54,17 @@ main {
 .filled {
     color: goldenrod;
     font-size: 0.8em;
+    font-family: 'Poppins', sans-serif;
 }
 
 .unfilled {
     color: gray;
     font-size: 0.8em;
 }
-
+.course img{
+    /* height: 150px; */
+    width: 200px;
+}
 .course-info {
     display: flex;
 }
@@ -62,6 +76,9 @@ main {
     .blogs {
         grid-template-columns: repeat(1, 1fr);
     }
+    .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media (max-width:668px) {
@@ -70,5 +87,8 @@ main {
     }
     .blogs {
         display: block;
+    }
+    .courses{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
