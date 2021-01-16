@@ -41,6 +41,20 @@ main {
     margin-right: 20px;
 }
 
+.filled {
+    color: goldenrod;
+    font-size: 0.8em;
+}
+
+.unfilled {
+    color: gray;
+    font-size: 0.8em;
+}
+
+.course-info {
+    display: flex;
+}
+
 @media (max-width:992px) {
     .top-players {
         grid-template-columns: repeat(2, 1fr);
